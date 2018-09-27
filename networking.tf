@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "${var.region}"
-}
-
 # VPC to host job assist application on AWS
 resource "aws_vpc" "jobassist_vpc" {
   cidr_block       = "${var.vpc_cidr}"
